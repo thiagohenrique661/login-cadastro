@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+:root{
+    
+    --white: #FFFFFF;
+    --black: #000000;
+    --yellow: #F9DA00; 
+    --red: #dc3545;
+    --blue: #007bff;  
+    --green: #00F525;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+}
+
+body{
+    
+    color: var(--white);
+    overflow: hidden;
+    background: #121212;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* TELA DE LOGIN */
+.principal-login{
+    width: 100vw;
+    height: 90vh;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-esquerda{
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-esquerda h1{
+    color: #19EBEB;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+   
+}
+
+.login-direita{
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #011439;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000033;
+}
+
+.card-login h1{
+    font-weight: 800;
+    color:#19EBEB;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.span-required{
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: var(--red);
+    display: none;
+}
+
+.texto input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(126,126,126,0.1);
+    color: var(--white);
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.texto input::placeholder{
+    color: var(--white);
+}
+
+.texto label{
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000033;
+    background: #19EBEB;
+    box-shadow: 0px 10px 40px -12px  #000033 ;
+    cursor: pointer;
+}
+
+.btn-login:hover{
+    background: #17D1D1;
+}
+
+.card-login a{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 200;
+    color:#19EBEB;
+    text-align: start;
+    display: flex;
+    
+    
+}
+
+.card-login a:hover{
+    color:#17D1D1;
+    text-decoration: underline;      
+}
+
+.login-animation{
+    width: 50vw;
+}
+
+/* FORMULÁRIO */
+#cadastro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background: #121212;
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.212);  
+}
+
+.image-esquerda{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A171A;
+    padding: 1rem;
+}
+
+.image-esquerda img{
+    width: 31rem;
+    border: none;
+  
+}
+
+.form-direita{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: #1A171A;
+    padding: 3rem;
+}
+
+.form-cabecalho{
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+}
+
+.login-button button{
+    border: none;
+    background-color:#19EBEB;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.login-button button:hover{
+    background-color: #17D1D1;
+}
+
+.login-button button a{
+    color: #000033;
+    text-transform: uppercase;
+}
+
+
+.form-cabecalho h1::after{
+    content: '';
+    display: block;
+    width: 11.1rem;
+    height: 0.3rem;
+    background-color: #19EBEB;
+    position: absolute;
+}
+
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.caixa-inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.caixa-inputs input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.caixa-inputs input:hover{
+    background-color:  #DDFFFC;
+    cursor: pointer;
+   
+}
+
+.caixa-inputs input:focus-visible{
+    outline: 1px solid #DDFFFC;
+}
+
+.generos-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.generos-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.generos-buttons input{
+    margin-right: 0.35rem;
+}
+
+.generos-buttons label{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+ h6{
+    font-size: 1em;
+}
+
+.btn-continue button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #19EBEB;
+    padding: 0.62rem;
+    font: bold;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-continue button:hover{
+    background-color: #17D1D1;
+}
+
+.btn-home{
+    margin-top: -90%;
+    background-color: #19EBEB;
+    padding: 0.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-home:hover{
+    background-color: #17D1D1;
+
+}
+
+
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1330px) {
+    .image-esquerda{
+        display: none;
+
+    }
+
+    .container{
+        width: 50%;
+    }
+
+    .form-direita{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    
+    .inputs {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-input {
+        margin-top: 2rem;
+    }
+    .generos-group {
+        flex-direction: column;
+    }
+    .generos-title h6 {
+        margin: 0;
+    }
+    .generos-buttons {
+        margin-top: 0.5rem;
+    }
+}
+
+
+@media  (max-width: 950px){
+    .card-login{
+         width: 85%;
+    }
+
+    
+}
+
+@media  (max-width: 600px){
+    .principal-login{
+        flex-direction: column;
+    }
+
+    .login-esquerda h1{
+         display: none;
+    }
+
+    .login-direita{
+        width: 100%;
+        height: auto;
+    }
+
+    .login-esquerda{
+        width: 100%;
+        height: auto;
+    }
+
+    .login-esquerda img{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+
+    .title h1{
+
+        font-size: 0.95rem;
+    }
+
+    .login-button button{
+        display: none;
+    }
+}
